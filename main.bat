@@ -7,7 +7,9 @@ if "%~1" == "" (
   goto :eof
 )
 
-rem Create the main folder
+rem Create the main folder inside src/views
+cd src
+cd views
 mkdir "%~1"
 
 rem Chane directory to the newly created folder
@@ -36,6 +38,7 @@ mkdir services
 cd services
 copy nul "%~1.ts" > nul
 
+rem Below seems to not work
 attrib -r * /s /d >nul 2>nul
 
 echo Folder created, boss
