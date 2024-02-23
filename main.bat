@@ -38,6 +38,7 @@ mkdir services
 cd services
 copy nul "%~1.ts" > nul
 
+rem Below seems to not work
 attrib -r * /s /d >nul 2>nul
 
 echo Folder created, boss
