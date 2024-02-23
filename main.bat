@@ -7,7 +7,9 @@ if "%~1" == "" (
   goto :eof
 )
 
-rem Create the main folder
+rem Create the main folder inside src/views
+cd src
+cd views
 mkdir "%~1"
 
 rem Chane directory to the newly created folder
